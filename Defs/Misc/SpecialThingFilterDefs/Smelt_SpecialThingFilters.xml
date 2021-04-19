@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<SpecialThingFilterDef>
+		<defName>AllowSmeltableDesignations</defName>
+		<label>allow designated smeltable</label>
+		<description>a big ol block of test text</description>
+		<parentCategory>Root</parentCategory>
+		<allowedByDefault>true</allowedByDefault>
+		<saveKey>allowSmeltableDesignations</saveKey>
+		<configurable>true</configurable>
+		<workerClass>SmeltDesignation.SpecialThingFilterWorker_SmeltThing</workerClass>
+	</SpecialThingFilterDef>
+	
+</Defs>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs> 
+  
+  <RecipeDef>
+    <defName>SmeltDesignatedThing</defName>
+    <label>smelt designated objects</label>
+    <description>Smelt down designated things that return products.</description>
+    <jobString>Smelting designated thing.</jobString>
+    <workAmount>1600</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <specialProducts>
+      <li>Smelted</li>
+    </specialProducts>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Weapons</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Weapons</li>
+      </categories>
+      <specialFiltersToDisallow>
+		<li>AllowSmeltableDesignations</li>
+      </specialFiltersToDisallow>
+    </fixedIngredientFilter>
+	<forceHiddenSpecialFilters>
+      <li>AllowSmeltable</li>
+      <li>AllowBurnableWeapons</li>
+      <li>AllowNonBurnableWeapons</li>
+    </forceHiddenSpecialFilters>
+	<recipeUsers>
+		<li>ElectricSmelter</li>
+	</recipeUsers>
+  </RecipeDef>
+  
+  <RecipeDef>
+    <defName>BurnDesignatedThing</defName>
+    <label>burn designated objects</label>
+    <description>Burn designated things.</description>
+    <jobString>Burning designated thing.</jobString>
+    <workAmount>100</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cremate</effectWorking>
+    <soundWorking>Recipe_Cremate</soundWorking>
+	<requiredGiverWorkType>Hauling</requiredGiverWorkType>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Apparel</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Apparel</li>
+			</categories>
+			<specialFiltersToDisallow>
+				<li>AllowSmeltableDesignations</li>
+			</specialFiltersToDisallow>
+		</fixedIngredientFilter>
+		<recipeUsers>
+			<li>ElectricCrematorium</li>
+		</recipeUsers>
+  </RecipeDef>
+  
+  
+</Defs>

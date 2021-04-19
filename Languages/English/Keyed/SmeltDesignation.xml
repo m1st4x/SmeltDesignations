@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+	<SmeltDesignation.DesignatorSmeltItem>Smelt Item</SmeltDesignation.DesignatorSmeltItem>
+	<SmeltDesignation.DesignatorSmeltItemDesc>Mark specific items to be smelted. A bill must still be made in the smelter.</SmeltDesignation.DesignatorSmeltItemDesc>
+	<SmeltDesignation.MessageMustDesignateSmeltable>No smeltable items were selected</SmeltDesignation.MessageMustDesignateSmeltable>
+</LanguageData>
