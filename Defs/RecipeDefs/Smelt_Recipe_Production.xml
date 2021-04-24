@@ -18,6 +18,7 @@
         <filter>
           <categories>
             <li>Weapons</li>
+			<li>ApparelArmor</li>
           </categories>
         </filter>
         <count>1</count>
@@ -25,16 +26,22 @@
     </ingredients>
     <fixedIngredientFilter>
       <categories>
-        <li>Weapons</li>
+		<li>Weapons</li>
+		<li>ApparelArmor</li>
       </categories>
       <specialFiltersToDisallow>
 		<li>AllowSmeltableDesignations</li>
+		<li>AllowNonSmeltableWeapons</li>
+		<li>AllowNonSmeltableApparel</li>
       </specialFiltersToDisallow>
     </fixedIngredientFilter>
 	<forceHiddenSpecialFilters>
       <li>AllowSmeltable</li>
       <li>AllowBurnableWeapons</li>
       <li>AllowNonBurnableWeapons</li>
+      <li>AllowSmeltableApparel</li>
+      <li>AllowBurnableApparel</li>
+      <li>AllowNonBurnableApparel</li>
     </forceHiddenSpecialFilters>
 	<recipeUsers>
 		<li>ElectricSmelter</li>
