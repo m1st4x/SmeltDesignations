@@ -49,6 +49,51 @@
   </RecipeDef>
   
   <RecipeDef>
+    <defName>DestroyDesignatedThing</defName>
+    <label>destroy designated objects</label>
+    <description>Use heat to destroy non-smeltable things. Yields no resources.</description>
+    <jobString>Destroying designated thing.</jobString>
+    <workAmount>400</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <specialProducts>
+      <li>Smelted</li>
+    </specialProducts>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Weapons</li>
+			<li>Apparel</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+		<li>Weapons</li>
+		<li>Apparel</li>
+      </categories>
+      <specialFiltersToDisallow>
+		<li>AllowSmeltableDesignations</li>
+		<li>AllowSmeltable</li>
+      </specialFiltersToDisallow>
+    </fixedIngredientFilter>
+	<forceHiddenSpecialFilters>
+      <li>AllowBurnableWeapons</li>
+      <li>AllowNonBurnableWeapons</li>
+      <li>AllowSmeltableApparel</li>
+      <li>AllowBurnableApparel</li>
+      <li>AllowNonBurnableApparel</li>
+    </forceHiddenSpecialFilters>
+	<recipeUsers>
+		<li>ElectricSmelter</li>
+	</recipeUsers>
+  </RecipeDef>
+  
+  <RecipeDef>
     <defName>BurnDesignatedThing</defName>
     <label>burn designated objects</label>
     <description>Burn designated things.</description>
